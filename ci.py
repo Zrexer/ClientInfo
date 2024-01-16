@@ -24,4 +24,5 @@ for i in soup.find_all("input"):
                 val.append(vx)
 
 for h in range(len(name)):
-    print(f"Name: {name[h]} => {val[h]}")
+    c = str(val[h]).replace("/>", "").replace(">", "")
+    print(f"Name: {name[h]} => {c}")
